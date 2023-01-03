@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>formulário</title>
+    <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script language="javascript" src="_javascript/cadastro.js"></script>
+    <script language="javascript" src="_javascript/cidades.js"></script>
+
+</head>
+
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <h1>Formulário</h1>
+            <h2>Lojas Novo Mundo</h2>
+            <figure>
+                <img id="logo" src="./image/novomundologotipo-640w.webp" alt="">
+            </figure>
+            <figure>
+                <img id="icone" src="./image/logonm.webp" alt="">
+            </figure>
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('./image/casa.jpg')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('./image/celular.png')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./celulares.html">Celulares</a></li>
+                    <li onmouseover="mudaFoto('./image/geladeira.jpg')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./geladeiras.html">Geladeiras</a></li>
+                    <li onmouseover="mudaFoto('./image/moveis.jpg')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./celulares.html">Móveis</a></li>
+                    <li onmouseover="mudaFoto('./image/som.jpg')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./tv_Audio.html">TV e Áudio</AUDio></a></li>
+                    <li onmouseover="mudaFoto('./image/logonm.webp')" onmouseout="mudaFoto('./image/logonm.webp')"><a
+                            href="./eletroportateis.html">Eletreportáteis</AUDio></a></li>
+                    <td class="ce"> &nbsp</td>
+                    <td class="ce"> &nbsp</td>
+                    <td class="ce"> &nbsp</td>
+                    <td class="ce"> &nbsp</td>
+
+
+
+                </ul>
+            </nav>
+        </header>
+    </div>
+    </nav>
+    <h2> Preencha o formulário abaixo </h2><br />
+
+    <form action="Script_do_Formulario.php" method="post">
+
+        <!-- DADOS PESSOAIS-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="nome">Nome: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="email">
+                    </td>
+                    <td>
+                        <label for="sobrenome">Sobrenome: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="sobrenome">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Nascimento: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="dia" size="2" maxlength="2" value="dd">
+                        <input type="text" name="mes" size="2" maxlength="2" value="mm">
+                        <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="rg">RG: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="rg" size="13" maxlength="13">
+                    </td>
+                </tr>
+                <div>
+                    <td>
+                        <label for="CPF">CPF: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" id="valor" name="valor" oninput="mascara(this)" />
+                        <button onclick={validarCPF(valor)}>Validar</button>
+                </div>
+            </table>
+        </fieldset>
+
+        <br />
+        <!-- ENDEREÇO -->
+        <fieldset>
+            <legend>Dados de Endereço</legend>
+            <table cellspacing="10">
+
+                <tr>
+                    <td>
+                        <label for="rua">Rua:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="rua">
+                    </td>
+                    <td>
+                        <label for="numero">Numero:</label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="numero" size="4">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="bairro">Bairro: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="bairro">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="estado">Estado:</label>
+                    </td>
+                    <td align="left">
+                        <select name="estado">
+                            <option value="ac">Acre</option>
+                            <option value="al">Alagoas</option>
+                            <option value="am">Amazonas</option>
+                            <option value="ap">Amapá</option>
+                            <option value="ba">Bahia</option>
+                            <option value="ce">Ceará</option>
+                            <option value="df">Distrito Federal</option>
+                            <option value="es">Espírito Santo</option>
+                            <option value="go">Goiás</option>
+                            <option value="ma">Maranhão</option>
+                            <option value="mt">Mato Grosso</option>
+                            <option value="ms">Mato Grosso do Sul</option>
+                            <option value="mg">Minas Gerais</option>
+                            <option value="pa">Pará</option>
+                            <option value="pb">Paraíba</option>
+                            <option value="pr">Paraná</option>
+                            <option value="pe">Pernambuco</option>
+                            <option value="pi">Piauí</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                            <option value="ro">Rondônia</option>
+                            <option value="rs">Rio Grande do Sul</option>
+                            <option value="rr">Roraima</option>
+                            <option value="sc">Santa Catarina</option>
+                            <option value="se">Sergipe</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="to">Tocantins</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cidade">Cidade: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="cidade">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cep">CEP: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3"
+                            maxlength="3">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br />
+
+        <!-- DADOS DE LOGIN -->
+        <fieldset>
+            <legend>Dados de login</legend>
+            <table cellspacing="10">
+                <tr>
+                    <td>
+                        <label for="email">E-mail: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="imagem">Imagem de perfil:</label>
+
+
+                    </td>
+                    <td>
+                        <input type="file" name="imagem">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="login">Login de usuário: </label>
+                    </td>
+                    <td align="left">
+                        <input type="text" name="login">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Senha: </label>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="pass">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="passconfirm">Confirme a senha: </label>
+                    </td>
+                    <td align="left">
+                        <input type="password" name="passconfirm">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+
+        <!-- DADOS DE LOGIN -->
+        <fieldset>
+            <legend>Renda Pessoal</legend>
+            <table cellspacing="10">
+                <td class="ce"><label for="crendapes"><b>RENDA
+                            PESSOAL</b> &nbsp
+                        (ganho &nbsp obtido &nbsp individualmente,
+                        &nbsp por &nbsp trabalho &nbsp
+                        remunerado).<br /> Arrraste o botão ao lado,
+                        de modo a selecionar sua faixa de
+                        renda:</label></td>
+                <td class="cc"></td>
+                <td class="cd"> <input type="text" name="trendapestotal" id="crendapestotal" size="27"
+                        placeholder="Não possuo" readonly> <br />
+                    &nbsp
+                    &nbsp Mín <input type="range" name="trendapes" id="crendapes" min="0" max="17172" step="954"
+                        value="0" oninput="calc_total()" /> Máx</td>
+                </tr>
+
+                <tr><br /><br /><br /> </tr>
+                <td class="ce"><label for="crendafam"><b>RENDA
+                            FAMILIAR </b>
+                        (considerada &nbsp a &nbsp
+                        soma &nbsp dos &nbsp ganhos
+                        &nbsp dos &nbsp
+                        membros do núcleo <br />familiar
+                        imediato [pai, mãe,
+                        esposo(a), filho (s),
+                        e/ou
+                        avós], por trabalho
+                        remunerado). <br />
+                        Arrraste o botão ao
+                        lado de modo, a
+                        selecionar sua faixa
+                        de renda...</label></td>
+                <td class="cc"></td>
+                <td class="cd"><input type="text" name="trendafamtotal" id="crendafamtotal" size="27" placeholder="Não
+                                    possuo" readonly><br />
+                    &nbsp &nbsp Mín
+                    <input type="range" name="trendafam" id="crendafam" min="0" max="24804" step="954" value="0"
+                        oninput="calc_total2()" />
+                    Máx
+                </td>
+                </tr>
+            </table>
+            </article>
+            </table>
+        </fieldset>
+        <br />
+        <input type="submit">
+        <input type="reset" value="Limpar">
+    </form>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="_javascript/cadastro.js"></script>
+
+</body>
+
+</html>

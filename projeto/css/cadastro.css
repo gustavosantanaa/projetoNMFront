@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',arial,helvetica,sans-serif;
+    color: rgba(0, 0, 0, 1);
+    align-items: center;
+}
+#from {
+    background-image: url(../_imagens/form.jpg);
+    height: 900px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.max-width {
+    top: 10px;
+    left: 1000px;
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+#imgPhoto {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #eee;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#imgPhoto:hover {
+    background-color: rgb(180, 180, 180);
+    border: 5px solid #111;
+}
+
+#interface {
+    background-color: #04048b;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    padding: 10px 10px 10px 10px;
+}
+
+#cabecalho {
+    height: 150px;
+}
+
+/* #corpo {
+    display: block;
+    position: relative;
+    width: 500px;
+    float: center;
+    padding-right: 15px;
+    margin-top: 10px;
+} */
+
+#rodape {
+    clear: both;
+    border-top: 1px solid #04048b;
+}
+
+#rodape p {
+    text-align: center;
+}
+
+#cabecalho h1 {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 22pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 150px;
+    margin-top: 10px;
+    margin-left: 520px;
+}
+
+#cabecalho h2 {
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 15pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 150px;
+    margin-top: 60px;
+    margin-left: 555px;
+}
+
+#cabecalho img#logo {
+    background-size: 300px 33px;
+    display: block;
+    height: 33px;
+    overflow: hidden;
+    position: relative;
+    text-indent: 1000%;
+    transition: background 0.2s ease-in-out,height 0.2s ease-in-out,width 0.2s ease-in-out;
+    white-space: nowrap;
+    width: 300px;
+}
+
+#cabecalho img#icone {
+    position: relative;
+    left: 1240px;
+    top: 10px;
+    height: 100px;
+    width: 170px;
+}
+
+#menu {
+    display: block;
+    margin: 20px 0px 50px;
+}
+
+#menu ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 180px;
+    left: 370px;
+}
+
+#menu li {
+    display: inline-block;
+    background-color: #04048b;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+#menu li:hover {
+    background-color: #04048b;
+}
+
+#menu h1 {
+    display: none;
+}
+
+#menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #00CF80;
+    text-shadow: #00CF80 1px 1px 10px;
+}
+
+/*Fim da formatação do menu*/
+#logo {
+    width: 70%;
+    margin: 100px 0px 0px 0px
+}
+
+#corpo {
+    display: block;
+    width: 800px;
+    float: left;
+    padding-right: 15px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    background-color: #cecece;
+}
+
+aside#lateral-1 {
+    display: block;
+    float: right;
+    background-color: #fff;
+    list-style: none;
+}
+
+aside#lateral {
+    display: block;
+    float: right;
+    background-color: #fff;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    font-size: 13pt;
+    color: #ffffff;
+    background-color: #606060;
+    padding: 10px;
+}
+
+/* @charset "UTF-8"; */
+
+ul#album-fotos {
+    width: 400px;
+    margin: 0px auto;
+    padding: 50px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9px;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto-01 {
+    background: url('../_imagens/samsung.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-02 {
+    background: url('../_imagens/apple.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-03 {
+    background: url('../_imagens/air.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-04 {
+    background: url('../_imagens/panela.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-05 {
+    background: url('../_imagens/para.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-06 {
+    background: url('../_imagens/brast.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-07 {
+    background: url('../_imagens/cama.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-08 {
+    background: url('../_imagens/jantar.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-09 {
+    background: url('../_imagens/tvoled.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-09:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+ul#album-fotos li#foto-10 {
+    background: url('../_imagens/home.jpg') no-repeat;
+    background-position: 50% 50%;
+    background-size: 400px 400px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-10:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+footer{
+    font-family: 'bahnschrift', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #04048b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 35px;
+    color: #fff;
+}
+
+footer p{
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+#foto-legenda-2{
+    float: left;
+    margin: 10px 0 20px 0;
+    position: relative;
+    width: 38.75%;
+}
+
+#H-tel {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    margin: 20px 0px 50px;
+}
+
+.P {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    float: left;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0px 50px;
+}
+
+.Ps {
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    float: left;
+    text-align: left;
+    color: #04048b;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2em;
+    margin: -10px 0px 80px;
+}
+
+.Pc {  
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 15px;
+    float: left;
+    margin: 20px -135px 90px;
+}
+
+.Pj {
+    float: left;
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 70px -135px 90px;
+}
+
+.Pt {
+    float: left;
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 17px;
+    max-width: 700px;
+    margin: 150px -160px 80px;
+}
+
+.Redes-sociais{
+    display: flex;
+    
+}
+
+.Redes-sociais a{
+    background-color: #04048b;
+    width: 55px;
+    height: 55px;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Redes-sociais a:hover{
+    transform: scale(1.5);
+    transition: .3s;
+    text-shadow: 0 0 5px #FFF, 0 0 5px #FFF, 0 0 5px
+}
+
+.btn{
+    background-color: #e500f9;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}

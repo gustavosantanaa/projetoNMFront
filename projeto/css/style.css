@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato',arial,helvetica,sans-serif;
+    color: rgba(0, 0, 0, 1);
+    align-items: center;
+}
+#from {
+    background-image: url(../_imagens/form.jpg);
+    height: 900px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+.max-width {
+    top: 10px;
+    left: 1000px;
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+#imgPhoto {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #eee;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .3s;
+}
+
+#imgPhoto:hover {
+    background-color: rgb(180, 180, 180);
+    border: 5px solid #111;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #808080;
+    color: rgba(0, 0, 0, 1);
+}
+
+#interface {
+    width: 1300px;
+    background-color: darkblue;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    padding: 10px 10px 10px 10px;
+}
+
+#cabecalho {
+    border-bottom: 1px #00CF80;
+    height: 150px;
+}
+
+#cabecalho h1 {
+    position: absolute;
+    text-align: center;
+    color: #00CF80;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 150px;
+    margin-top: 10px;
+    margin-left: 520px;
+}
+
+#cabecalho h2 {
+    position: absolute;
+    text-align: center;
+    color: #00CF80;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15pt;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
+    padding: 0px;
+    margin-bottom: 150px;
+    margin-top: 70px;
+    margin-left: 555px;
+}
+
+#logo {
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    height: 100px;
+    width: 100px;
+    border: none;
+}
+
+#icone {
+    position: absolute;
+    left: 1160px;
+    top: 10px;
+    height: 100px;
+    width: 170px;
+}
+
+#menu {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+li:hover {
+    background-color: #606060;
+}
+
+#cadastro:hover {
+    background-color: #00CF80;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu a {
+    color: white;
+    text-decoration: none;
+    transform: matrix(20);
+}
+
+aside {
+    display: block;
+    width: 600px;
+    float: right;
+    background-color: #DDD;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+aside#lateral {
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 0px;
+
+}
+
+aside#lateral h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    font-size: 14pt;
+    color: #dddddd;
+    background-color: #606060;
+    padding: 10px;
+}
+
+#corpo {
+    display: block;
+    width: 650px;
+    float: left;
+    border-right: 1px solid #606060;
+    background-color: #FFF;
+    padding-right: 15px;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    background-color: #cecece;
+}
+
+.logo-nm {
+    width: 400px;
+    height: 200px;
+}
+
+#rodape {
+    clear: both;
+    border-top: 1px solid #00CF80;
+}
+
+#rodape p {
+    text-align: center;
+    color: #FFF;
+
+
+}
+
+a {
+    align-items: flex-end;
+    color: #00CF80;
+}
+
+ul#album-fotos {
+    width: 500px;
+    margin: 650px 0px 0px 450px;
+    padding: 30px;
+    overflow: hidden;
+    list-style: none;
+}
+
+ul#album-fotos li span {
+    opacity: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px #000000;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 9px;
+    line-height: 370px;
+    padding: 5px;
+}
+
+ul#album-fotos li {
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin: 10px;
+    border: 5px solid #ffffff;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .4);
+    transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+}
+
+ul#album-fotos li:hover {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+}
+
+ul#album-fotos li:hover span {
+    opacity: 1;
+}
+
+ul#album-fotos li#foto-01 {
+    background: url('../image/celular.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+ul#album-fotos li#foto-01:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-02 {
+    background: url('../image/celular.png') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-02:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-03 {
+    background: url('../image/fritadeira.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-03:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-04 {
+    background: url('../image/panelaEletrica.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-04:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-05 {
+    background: url('../image/ar.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-05:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+
+ul#album-fotos li#foto-06 {
+    background: url('../image/geladeira.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-06:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-07 {
+    background: url('../image/cama.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-07:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-08 {
+    background: url('../image/salaJantar.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+
+ul#album-fotos li#foto-08:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+/* ul#album-fotos li#foto-09 {
+    background: url('../image/tv.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+   
+ul#album-fotos li#foto-09:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+}
+
+ul#album-fotos li#foto-10{
+    background: url('../image/som.jpg') no-repeat;
+    background-position: 30% 30%;
+    background-size: 150px 150px;
+    background-color: #ffffff;
+}
+
+   
+ul#album-fotos li#foto-10:hover {
+    background-position: 0px 0px;
+    background-size: 200px 200px;
+} */
+
+#carouselExampleIndicators {
+
+    background-size: 0px;
+    size-adjust: 20px;
+    width: 60%;
+    margin: auto;
+    display: block;
+
+}
+
+#cards{
+    width: 95%;
+    margin : auto;
+    align-content: center;
+
+}
+
+#formulario{
+    background-color: #00CF80;
+    background: #00CF80;
+}
+
+
+footer{
+    font-family: 'bahnschrift', sans-serif;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #04048b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h6{
+    font-size: 35px;
+    color: #fff;
+}
+
+footer p{
+    font-family: 'Lato', 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 15px;
+    width: 500px;
+    text-align: center;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height: 23px;
+}
+
+#foto-legenda-2{
+    float: left;
+    margin: 10px 0 20px 0;
+    position: relative;
+    width: 38.75%;
+}
